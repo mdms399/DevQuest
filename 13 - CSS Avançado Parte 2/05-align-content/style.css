@@ -1,0 +1,48 @@
+.flex-start {
+    display: flex; /* Define que o container será um flexbox */
+    align-content: flex-start; /* Alinha as linhas de conteúdo do flexbox no início do contêiner */
+    flex-wrap: wrap; /* Permite que os itens dentro do flexbox quebrem para a próxima linha, caso não caibam na linha atual */
+    flex-direction: column; /* Alinha os itens flexíveis em uma coluna (verticalmente) */
+}
+
+.flex-end {
+    display: flex; /* Define que o container será um flexbox */
+    align-content: flex-end; /* Alinha as linhas de conteúdo do flexbox no final do contêiner */
+    flex-wrap: wrap; /* Permite que os itens dentro do flexbox quebrem para a próxima linha, caso não caibam na linha atual */
+    flex-direction: column; /* Alinha os itens flexíveis em uma coluna (verticalmente) */
+}
+
+.center {
+    display: flex; /* Define que o container será um flexbox */
+    align-content: center; /* Alinha as linhas de conteúdo do flexbox no centro do contêiner */
+    flex-wrap: wrap; /* Permite que os itens dentro do flexbox quebrem para a próxima linha, caso não caibam na linha atual */
+    justify-content: center; /* Alinha os itens ao longo do eixo principal (horizontalmente) no centro */
+    flex-direction: column; /* Alinha os itens flexíveis em uma coluna (verticalmente) */
+}
+
+.space-between {
+    display: flex; /* Define que o container será um flexbox */
+    align-content: space-between; /* Distribui as linhas de conteúdo do flexbox com espaço entre elas */
+    flex-wrap: wrap; /* Permite que os itens dentro do flexbox quebrem para a próxima linha, caso não caibam na linha atual */
+    flex-direction: column; /* Alinha os itens flexíveis em uma coluna (verticalmente) */
+}
+
+.space-around {
+    display: flex; /* Define que o container será um flexbox */
+    align-content: space-around; /* Distribui as linhas de conteúdo do flexbox com espaço ao redor de cada uma */
+    flex-wrap: wrap; /* Permite que os itens dentro do flexbox quebrem para a próxima linha, caso não caibam na linha atual */
+    flex-direction: column; /* Alinha os itens flexíveis em uma coluna (verticalmente) */
+}
+
+.space-evenly {
+    display: flex; /* Define que o container será um flexbox */
+    align-content: space-evenly; /* Distribui as linhas de conteúdo do flexbox com o mesmo espaço entre elas */
+    flex-wrap: wrap; /* Permite que os itens dentro do flexbox quebrem para a próxima linha, caso não caibam na linha atual */
+    flex-direction: column; /* Alinha os itens flexíveis em uma coluna (verticalmente) */
+}
+
+.space-stretch {
+    display: flex; /* Define que o container será um flexbox */
+    align-content: stretch; /* Faz as linhas de conteúdo do flexbox se esticarem para ocupar o máximo de espaço possível */
+    flex-wrap: wrap; /* Permite que os itens dentro do flexbox quebrem para a próxima linha, caso não caibam na linha atual */
+}

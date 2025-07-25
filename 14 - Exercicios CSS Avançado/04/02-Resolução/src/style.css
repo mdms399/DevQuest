@@ -1,0 +1,61 @@
+/* O elemento html tem a propriedade de fonte definida como 62.5%. 
+   Isso é comum para fazer com que 1rem corresponda a 10px, tornando mais fácil a conversão entre rem e px. */
+   html {
+    font-size: 62.5%; /* 62.5% de 16px = 10px */
+}
+
+/* O body define a família da fonte e o peso da fonte para o corpo do documento */
+body {
+    font-family: "Public Sans", sans-serif; /* Definindo a fonte "Public Sans" como fonte primária */
+    font-weight: 400; /* Peso normal da fonte (sem negrito) */
+}
+
+/* O cabeçalho (.header) é configurado como um contêiner flexível */
+.header {
+    display: flex; /* Exibe os itens dentro do cabeçalho como flex */
+    justify-content: space-between; /* Distribui os itens com o máximo de espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    padding: 4.5rem; /* Adiciona um espaçamento interno de 4.5rem em todos os lados */
+}
+
+/* A classe logo define o estilo para o logotipo */
+.logo {
+    display: flex; /* Exibe os itens dentro de .logo como flex */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+}
+
+/* O título dentro da logo (h1) tem um tamanho de fonte de 2rem e margem à esquerda */
+.logo h1 {
+    font-size: 2rem; /* Define o tamanho da fonte como 2rem */
+    margin-left: 5px; /* Adiciona uma margem de 5px à esquerda do título */
+}
+
+/* A classe .menu configura a navegação principal como um contêiner flexível */
+.menu {
+    display: flex; /* Exibe os itens dentro de .menu como flex */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+/* Os itens de lista dentro de .menu que contêm links (a) */
+.menu li a {
+    padding: 10px 5px; /* Adiciona 10px de padding na parte superior e inferior, e 5px à esquerda e direita */
+    transition: 0.3s ease-in-out; /* Adiciona uma transição suave para qualquer alteração de estilo em 0.3 segundos */
+    margin-left: 1.5rem; /* Adiciona 1.5rem de margem à esquerda entre os links */
+    font-size: 1.5rem; /* Define o tamanho da fonte como 1.5rem */
+}
+
+/* Estilo do link ao passar o mouse (efeito hover) */
+.menu li a:hover {
+    background-color: #5BC241; /* Muda o fundo para um tom de verde quando o mouse passa por cima */
+    color: #ffffff; /* Altera a cor do texto para branco quando o mouse passa */
+}
+
+/* Estilo para os links que têm a classe .btn */
+.menu li a.btn {
+    background-color: #5bc241; /* Define o fundo como verde */
+    border-radius: 10px; /* Torna os cantos arredondados com raio de 10px */
+    color: #ffffff; /* Define a cor do texto como branco */
+    margin-left: 2rem; /* Adiciona 2rem de margem à esquerda */
+    padding: 10px 20px; /* Adiciona 10px de padding na parte superior e inferior, e 20px à esquerda e direita */
+}

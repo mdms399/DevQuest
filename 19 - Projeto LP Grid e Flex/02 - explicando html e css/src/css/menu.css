@@ -1,0 +1,124 @@
+/* Estilo do menu na barra de navegação */
+.header nav ul {
+    display: flex; /* Exibe os itens de navegação em linha (horizontal) */
+}
+
+/* Estilo para os links de navegação */
+.header nav ul li a {
+    font-size: 2rem; /* Define o tamanho da fonte */
+    font-weight: 500; /* Define a espessura da fonte */
+    padding: 10px 30px; /* Espaçamento interno (paddings) nos links */
+    border-radius: 50px; /* Bordas arredondadas para os links */
+    transition: 0.3s; /* Transição suave de 0,3s para os efeitos */
+}
+
+/* Efeito quando o link é hover (quando o cursor passa sobre ele) */
+.header nav ul li a:hover {
+    color: #FFF; /* Cor do texto ao passar o mouse */
+    background-color: coral; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o menu hambúrguer (visível apenas em telas pequenas) */
+.header .menu {
+    display: none; /* O menu hambúrguer está escondido por padrão */
+    width: 60px; /* Largura do ícone de menu */
+    height: 60px; /* Altura do ícone de menu */
+    align-self: flex-end; /* Alinha o menu no final (direita) do header */
+}
+
+/* Estilo do label que envolve o menu hambúrguer */
+.header nav label {
+    display: flex; /* Usa flexbox para alinhar os itens do menu */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+}
+
+/* Estilo da linha do hambúrguer */
+.header .hamburguer {
+    background-color: #000; /* Cor preta para as linhas do hambúrguer */
+    position: relative; /* Necessário para posicionar os outros elementos dentro */
+    display: block; /* Exibe o hambúrguer como um bloco */
+    width: 30px; /* Largura das linhas */
+    height: 2px; /* Espessura das linhas */
+    top: 29px; /* Posiciona a linha no centro */
+    left: 15px; /* Alinha a linha para o meio */
+    transition: 0.5s ease-in-out; /* Transição suave para animação */
+}
+
+/* Estilos das linhas do hambúrguer (antes e depois da linha central) */
+.header .hamburguer:before, .header .hamburguer:after {
+    background-color: #000; /* Cor preta para as linhas extras */
+    content: ""; /* Necessário para que as linhas sejam visíveis */
+    display: block; /* Exibe as linhas como blocos */
+    width: 100%; /* Define a largura das linhas */
+    height: 100%; /* Define a altura das linhas */
+    position: absolute; /* Posiciona as linhas de forma absoluta dentro do hambúrguer */
+    transition: 0.2s ease-in-out; /* Transição suave para animação */
+}
+
+/* A linha antes (acima da central) */
+.header .hamburguer:before {
+    top: -10px; /* Posiciona um pouco acima da linha central */
+}
+
+/* A linha depois (abaixo da central) */
+.header .hamburguer:after {
+    bottom: -10px; /* Posiciona um pouco abaixo da linha central */
+}
+
+/* Esconde o input checkbox */
+.header input {
+    display: none; /* O input (checkbox) está oculto por padrão */
+}
+
+/* Estilos quando o menu está ativado (input.checked) */
+.header input:checked ~ label .hamburguer {
+    transform: rotate(45deg); /* Roda a linha central para formar um "X" */
+}
+
+/* Estilos para a linha antes (ao clicar no menu hambúrguer) */
+.header input:checked ~ label .hamburguer:before {
+    transform: rotate(90deg); /* Roda a linha antes em 90 graus */
+    top: 0; /* Alinha a linha antes com a linha central */
+}
+
+/* Estilos para a linha depois (ao clicar no menu hambúrguer) */
+.header input:checked ~ label .hamburguer:after {
+    transform: rotate(90deg); /* Roda a linha depois em 90 graus */
+    top: 0; /* Alinha a linha depois com a linha central */
+}
+
+/* Estilos responsivos para telas com largura máxima de 900px (dispositivos móveis) */
+@media (max-width: 900px) {
+    .header .menu {
+        display: block; /* Torna o menu visível (exibe o ícone hambúrguer) */
+    }
+
+    .header nav ul {
+        display: none; /* Esconde a lista de navegação padrão */
+    }
+
+    /* Exibe os itens do menu quando o input (checkbox) é marcado */
+    .header input:checked ~ ul {
+        display: block; /* Exibe a lista de navegação */
+    }
+
+    /* Estilos para a navegação dentro do header em telas pequenas */
+    .header nav {
+        position: absolute; /* Posiciona o menu fora do fluxo normal da página */
+        top: 8px; /* Distância do topo */
+        right: 20px; /* Distância da direita */
+        z-index: 1; /* Garante que o menu ficará acima de outros elementos */
+    }
+
+    .header nav ul {
+        width: 200px; /* Define a largura do menu */
+        background-color: #fff; /* Cor de fundo branca para o menu */
+        padding: 20px; /* Espaçamento interno do menu */
+    }
+
+    .header nav ul a {
+        text-align: center; /* Centraliza os links dentro do menu */
+        padding: 20px; /* Adiciona um padding para aumentar a área clicável */
+        display: block; /* Exibe os links como blocos (um abaixo do outro) */
+    }
+}

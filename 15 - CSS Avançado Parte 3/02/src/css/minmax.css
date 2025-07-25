@@ -1,0 +1,21 @@
+/* Estilo para cada célula do grid (os <div> dentro de .container) */
+.container > div {
+    border: 1px solid black;          /* Borda visível */
+    background-color: #8a2be2;        /* Roxo */
+    color: white;                     /* Texto branco */
+}
+
+/* Define o container como um Grid */
+.container {
+    display: grid;
+
+    /* Define as colunas da grid:
+       - 1ª coluna: mínimo 100px, máximo 800px
+       - 2ª e 3ª colunas: mínimo 100px, máximo 300px (repetidas)
+       - 4ª coluna: tamanho automático com base no conteúdo
+    */
+    grid-template-columns: 
+        minmax(100px, 800px)              /* 1ª coluna */
+        repeat(2, minmax(100px, 300px))   /* 2ª e 3ª colunas */
+        minmax(auto, auto);               /* 4ª coluna */
+}

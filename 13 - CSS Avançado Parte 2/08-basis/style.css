@@ -1,0 +1,39 @@
+.container {
+    display: flex; /* Define que o container será um flexbox */
+}
+
+.grow-0 {
+    flex-grow: 0; /* Impede que o item dentro do flexbox cresça, ele ocupará apenas o espaço necessário */
+}
+
+.grow-1 {
+    flex-grow: 1; /* Permite que o item dentro do flexbox cresça para ocupar o espaço restante proporcionalmente */
+}
+
+.grow-2 {
+    flex-grow: 2; /* Permite que o item dentro do flexbox cresça, ocupando o dobro do espaço em relação a um item com flex-grow: 1 */
+}
+
+.grow-3 {
+    flex-grow: 3; /* Permite que o item dentro do flexbox cresça, ocupando três vezes mais espaço que um item com flex-grow: 1 */
+}
+
+.basis-auto {
+    flex-basis: auto; /* Define que o tamanho base do item será o tamanho do conteúdo do item, ou o tamanho calculado automaticamente */
+}
+
+.basis-0 {
+    flex-basis: 0; /* Define que o tamanho base do item será 0, ou seja, o item começará sem ocupar nenhum espaço */
+}
+
+.basis-100 {
+    flex-basis: 100px; /* Define que o tamanho base do item será 100 pixels, independente do conteúdo */
+}
+
+.basis-200 {
+    flex-basis: 200px; /* Define que o tamanho base do item será 200 pixels, independente do conteúdo */
+}
+
+.basis-300 {
+    flex-basis: 300px; /* Define que o tamanho base do item será 300 pixels, independente do conteúdo */
+}

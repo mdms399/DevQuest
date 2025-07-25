@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.auto {
+    align-self: auto;
+}
+
+.flex-start {
+    align-self: flex-start;
+}
+
+.flex-end {
+    align-self: flex-end;
+}
+
+.center {
+    align-self: center;
+}
+
+.stretch {
+    align-self: stretch;
+}
+
+
+h1 {
+    font-family: "Doto";
+}

@@ -1,0 +1,5 @@
+.gap {
+    display: flex; /* Define que o container será um flexbox, permitindo a distribuição dos itens de forma flexível */
+    gap: 50px 20px; /* Define o espaçamento entre os itens. O primeiro valor (50px) aplica o espaçamento entre as linhas (ao longo do eixo vertical). O segundo valor (20px) aplica o espaçamento entre os itens dentro da mesma linha (ao longo do eixo horizontal) */
+    flex-direction: column; /* Alinha os itens verticalmente, ou seja, em uma coluna */
+}

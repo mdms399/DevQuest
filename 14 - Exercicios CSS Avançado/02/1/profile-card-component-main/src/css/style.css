@@ -1,0 +1,44 @@
+body {
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid 2px hsl(227, 10%, 46%);
+    margin: 0;
+}
+
+.nome-idade {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+img {
+    border-radius: 100px;
+}
+
+.flex {
+    padding: 20px;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.curtidas {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 700;
+}

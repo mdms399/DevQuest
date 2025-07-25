@@ -1,0 +1,43 @@
+/* .flex-start */
+.flex-start {
+    display: flex; /* Define que o elemento será um contêiner flexível */
+    align-items: flex-start; /* Alinha os itens dentro do contêiner no início do eixo transversal (no topo, no caso de uma coluna) */
+    flex-direction: column; /* Organiza os itens ao longo do eixo principal em uma coluna (ao invés de uma linha) */
+}
+
+/* .flex-end */
+.flex-end {
+    display: flex; /* Define o elemento como um contêiner flexível */
+    align-items: flex-end; /* Alinha os itens dentro do contêiner no final do eixo transversal (na parte inferior, no caso de uma coluna) */
+    flex-direction: column; /* Organiza os itens ao longo do eixo principal em uma coluna */
+}
+
+/* .center */
+.center {
+    display: flex; /* Define o elemento como um contêiner flexível */
+    align-items: center; /* Alinha os itens dentro do contêiner no centro do eixo transversal (centralizando verticalmente em uma coluna) */
+    flex-direction: column; /* Organiza os itens ao longo do eixo principal em uma coluna */
+}
+
+/* .stretch */
+.stretch {
+    display: flex; /* Define o elemento como um contêiner flexível */
+    align-items: stretch; /* Estica os itens dentro do contêiner para preencher todo o espaço do eixo transversal */
+    flex-direction: column; /* Organiza os itens ao longo do eixo principal em uma coluna */
+}
+
+/* .baseline */
+.baseline {
+    display: flex; /* Define o elemento como um contêiner flexível */
+    align-items: baseline; /* Alinha os itens dentro do contêiner com suas linhas de base (como o texto que está alinhado pela parte inferior das letras) */
+}
+
+/* .container .baseline-2 */
+.container .baseline-2 {
+    font-size: 40px; /* Define o tamanho da fonte como 40px para qualquer elemento com a classe .baseline-2 dentro de um contêiner com a classe .container */
+}
+
+/* .container .baseline-3 */
+.container .baseline-3 {
+    font-size: 100px; /* Define o tamanho da fonte como 100px para qualquer elemento com a classe .baseline-3 dentro de um contêiner com a classe .container */
+}

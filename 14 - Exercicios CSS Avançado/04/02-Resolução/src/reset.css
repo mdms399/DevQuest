@@ -1,0 +1,16 @@
+/* O seletor universal (*) aplica o estilo a todos os elementos na página */
+* {
+    padding: 0; /* Remove o espaçamento interno (padding) de todos os elementos */
+    margin: 0;  /* Remove a margem externa (margin) de todos os elementos */
+}
+
+/* O seletor ul aplica o estilo aos elementos <ul> (listas não ordenadas) */
+ul {
+    list-style-type: none; /* Remove os marcadores (bolinhas) ou números dos itens de lista */
+}
+
+/* O seletor a aplica o estilo aos elementos <a> (links) */
+a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #000; /* Define a cor do texto do link como preta (#000) */
+}

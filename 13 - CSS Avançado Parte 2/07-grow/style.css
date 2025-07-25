@@ -1,0 +1,19 @@
+.container {
+    display: flex; /* Define que o container será um flexbox, permitindo que seus itens sejam distribuídos de forma flexível */
+}
+
+.grow-0 {
+    flex-grow: 0; /* O item não crescerá, ele ocupará apenas o espaço necessário para o seu conteúdo */
+}
+
+.grow-1 {
+    flex-grow: 1; /* O item pode crescer para ocupar o espaço disponível, com um fator de crescimento igual a 1 */
+}
+
+.grow-2 {
+    flex-grow: 2; /* O item pode crescer para ocupar o espaço disponível, com um fator de crescimento igual a 2 (2 vezes mais que o item com flex-grow: 1) */
+}
+
+.grow-3 {
+    flex-grow: 3; /* O item pode crescer para ocupar o espaço disponível, com um fator de crescimento igual a 3 (3 vezes mais que o item com flex-grow: 1) */
+}

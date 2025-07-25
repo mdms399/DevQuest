@@ -1,0 +1,94 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: url(../images/bg-desktop.svg) center center no-repeat;
+  background-size: cover;
+  background-color: hsl(257, 40%, 49%);
+  color: #FFF;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 4rem 8rem;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8rem;
+  flex: 1;
+}
+
+.mockups img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-content {
+  max-width: 500px;
+}
+
+.text-content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.text-content p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.register-btn {
+  background-color: #FFF;
+  color: hsl(257, 40%, 49%);
+  padding: 1.5rem 6rem;
+  border-radius: 50px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.register-btn:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #FFF;
+}
+
+.footer {
+  padding: 4rem 8rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.social-icons li a {
+  border: 2px solid #FFF;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: #FFF;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons li a:hover {
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}

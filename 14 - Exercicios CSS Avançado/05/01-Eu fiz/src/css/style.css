@@ -1,0 +1,44 @@
+body {
+    font-family: "Public Sans", sans-serif;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+    padding: 129px 21px 129px 18px;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 335px;
+    height: 431.03px;
+}
+
+.image li {
+    position: relative;
+    overflow: hidden;
+}
+
+h1, p{
+    color: #fff;
+}
+
+.image h1 {
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+    margin: 0px 26px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.image p {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    margin: 0px 26px;
+    font-size: 17px;
+    font-weight: 300;
+}
+

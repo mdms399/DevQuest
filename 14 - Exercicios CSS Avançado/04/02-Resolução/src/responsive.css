@@ -1,0 +1,41 @@
+/* Media query para telas com largura máxima de 650px */
+@media(max-width: 650px) {
+    
+    /* Modifica a disposição do cabeçalho para uma coluna em telas menores */
+    .header {
+        flex-direction: column; /* Alinha os itens do cabeçalho verticalmente (em vez de lado a lado) */
+    }
+
+    /* Aumenta o tamanho da fonte do título no logo para se ajustar à tela menor */
+    .logo h1 {
+        font-size: 4rem; /* Aumenta o tamanho da fonte para 4rem */
+    }
+
+    /* Altera a direção do menu para coluna, colocando os itens verticalmente */
+    .menu {
+        flex-direction: column; /* Organiza os itens do menu verticalmente (em vez de horizontalmente) */
+        margin-top: 50px; /* Adiciona uma margem superior de 50px para afastar o menu do cabeçalho */
+    }
+
+    /* Aumenta o padding dos itens de lista do menu para dar mais espaçamento */
+    .menu li {
+        padding: 33px 0; /* Adiciona 33px de padding na parte superior e inferior de cada item de lista */
+    }
+
+    /* Adiciona margem no último item de lista para um espaçamento extra */
+    .menu li:last-child {
+        margin-top: 2rem; /* Adiciona 2rem de margem superior no último item do menu */
+    }
+
+    /* Aumenta o tamanho da fonte e o padding dos links no menu para telas menores */
+    .menu li a {
+        font-size: 4rem; /* Aumenta o tamanho da fonte para 4rem */
+        padding: 17px 40px; /* Aumenta o padding (espaçamento interno) para 17px em cima e embaixo, e 40px à esquerda e direita */
+    }
+
+    /* Modifica os links com a classe .btn, aumentando o tamanho da fonte e ajustando o padding */
+    .menu li a.btn {
+        font-size: 1.8rem; /* Define o tamanho da fonte como 1.8rem para os botões */
+        padding: 15px 23px; /* Adiciona 15px de padding na parte superior e inferior e 23px à esquerda e direita */
+    }
+}

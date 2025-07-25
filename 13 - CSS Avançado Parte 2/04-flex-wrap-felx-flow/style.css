@@ -1,0 +1,16 @@
+.nowrap {
+    display: flex; /* Define que o container será um flexbox */
+    flex-wrap: nowrap; /* Impede que os itens dentro do flexbox quebrem para a próxima linha, tudo ficará em uma linha só */
+}
+
+.wrap {
+    display: flex; /* Define que o container será um flexbox */
+    flex-direction: column; /* Alinha os itens flexíveis em uma coluna (verticalmente) */
+    flex-wrap: wrap; /* Permite que os itens dentro do flexbox quebrem para a próxima linha, caso não caibam na linha atual */
+}
+
+.wrap-reverse {
+    display: flex; /* Define que o container será um flexbox */
+    flex-wrap: wrap-reverse; /* Permite que os itens quebrem para a próxima linha, mas as linhas vão aparecer de baixo para cima */
+    flex-direction: column; /* Alinha os itens flexíveis em uma coluna (verticalmente) */
+}

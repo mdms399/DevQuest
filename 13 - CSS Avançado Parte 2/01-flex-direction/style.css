@@ -1,0 +1,20 @@
+.row {
+    display: flex;
+    flex-direction: row; /* Organiza os itens na horizontal (padrão) */
+}
+
+.row-reverse {
+    display: flex;
+    flex-direction: row-reverse; /* Inverte a ordem dos elementos na horizontal */
+}
+
+.column {
+    display: flex;
+    flex-direction: column; /* Organiza os itens na vertical */
+}
+
+.column-reverse {
+    display: flex;
+    flex-direction: column-reverse; /* Inverte a ordem dos elementos na vertical */
+}
+

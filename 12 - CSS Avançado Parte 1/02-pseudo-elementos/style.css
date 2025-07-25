@@ -1,0 +1,29 @@
+/* seletor::pseudo-elemento {
+    propriedade: valor
+} */
+
+p::first-letter {
+    color: coral;
+}
+
+.line::first-line {
+    color: coral;
+}
+
+li::marker {
+    color: red;
+    font-size: 23px;
+}
+
+
+.after::after{
+    content: " Testando 123";
+}
+
+.before::before {
+    content: "";
+    background: url(image/teste.jpg) center center no-repeat;
+    display: inline-block;
+    width: 327px;
+    height: 272px;
+}

@@ -1,0 +1,52 @@
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.thebank {
+    display: flex;
+    align-items: center;
+}
+
+.texto-thebank {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    align-items: center;
+}
+
+.sobre {
+    background: #5BC241;
+    padding: 8px;
+    color: #FFFFFF;
+}
+
+.cadastre-se {
+    background: #5BC241;
+    padding: 8px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Declaração do tipo de documento (HTML5) -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuração para design responsivo (adaptável a diferentes tamanhos de tela) -->
+    <title>Agência XYZ</title> <!-- Título da página, que aparece na aba do navegador -->
+    
+    <!-- Links para arquivos de estilos CSS -->
+    <link rel="stylesheet" href="src/css/reset.css"> <!-- Reset CSS: normaliza estilos padrão dos navegadores -->
+    <link rel="stylesheet" href="src/css/variables.css"> <!-- Variáveis CSS, provavelmente define cores, fontes e tamanhos reutilizáveis -->
+    <link rel="stylesheet" href="src/css/style.css"> <!-- Estilo principal da página -->
+    <link rel="stylesheet" href="src/css/menu.css"> <!-- Estilos específicos para o menu -->
+
+    <!-- Conexões com fontes externas (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Melhora a performance de carregamento -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Conexão com o Google Fonts para garantir que as fontes carreguem mais rápido -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Carrega a fonte Roboto do Google Fonts -->
+
+    <!-- Link para arquivo de ícones (Font Awesome) -->
+    <link rel="stylesheet" href="src/css/font-awesome.css"> <!-- Font Awesome para ícones sociais no rodapé -->
+</head>
+
+<body>
+    <header class="header">
+        <!-- Cabeçalho do site -->
+        <div class="header-container">
+            <a href="/">
+                <!-- Logo da página, que ao ser clicada leva ao início da página -->
+                <h1 class="logo">Agência XYZ</h1>
+            </a>
+
+            <nav>
+                <!-- Navegação -->
+                <input type="checkbox" id="menu-hamburguer" /> <!-- Checkbox para controlar o menu hambúrguer -->
+                <label for="menu-hamburguer">
+                    <!-- Label que ativa o menu hambúrguer quando clicado -->
+                    <div class="menu">
+                        <span class="hamburguer"></span> <!-- Ícone de menu hambúrguer -->
+                    </div>
+                </label>
+
+                <ul>
+                    <!-- Lista de links de navegação -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção "Hero" (principal destaque da página) -->
+    <section class="hero" id="hero">
+        <h2>We make cool things</h2> <!-- Texto principal da seção hero -->
+    </section>
+
+    <!-- Seção "About" (Sobre a empresa) -->
+    <section class="about" id="about">
+        <div class="item">
+            <h3>Title</h3> <!-- Título da seção -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, laudantium. ...</p> <!-- Descrição -->
+            <a href="" class="btn-know-more">Saiba mais</a> <!-- Link para mais informações -->
+        </div>
+        <div class="image right"></div> <!-- Imagem alinhada à direita -->
+        <div class="image left"></div> <!-- Imagem alinhada à esquerda -->
+        <div class="item">
+            <h3>Title</h3> <!-- Título -->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi magni ...</p> <!-- Descrição -->
+            <a href="" class="btn-know-more">Saiba mais</a> <!-- Link para mais informações -->
+        </div>
+    </section>
+
+    <!-- Seção "Services" (Serviços oferecidos) -->
+    <section class="services" id="services">
+        <div class="service">
+            <img src="./src/images/bolinha1.png" alt="Bolinha 1"> <!-- Imagem representando o serviço -->
+            <div class="service-info">
+                <h3>SEO</h3> <!-- Nome do serviço -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ...</p> <!-- Descrição do serviço -->
+            </div>
+        </div>
+
+        <div class="service">
+            <img src="./src/images/bolinha2.png" alt="Bolinha 2"> <!-- Outra imagem de serviço -->
+            <div class="service-info">
+                <h3>Landing Pages</h3> <!-- Nome do serviço -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ...</p> <!-- Descrição do serviço -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção "Projects" (Projetos realizados) -->
+    <section class="projects" id="projects">
+        <div class="project">
+            <a href="">
+                <img src="./src/images/tomatoes.jpg" alt="tomate"> <!-- Imagem de projeto -->
+            </a>
+        </div>
+        <div class="project">
+            <a href="">
+                <img src="./src/images/landscape.jpg" alt="LandScape"> <!-- Imagem de projeto -->
+            </a>
+        </div>
+        <div class="project">
+            <a href="">
+                <img src="./src/images/plants2.jpg" alt="Planta"> <!-- Imagem de projeto -->
+            </a>
+        </div>
+        <div class="project">
+            <a href="">
+                <img src="./src/images/flowers.jpg" alt="Flowers"> <!-- Imagem de projeto -->
+            </a>
+        </div>
+    </section>
+
+    <!-- Rodapé (Footer) -->
+    <footer class="footer" id="contact">
+        <h4>Agência XYZ</h4> <!-- Nome da agência -->
+        <nav>
+            <ul>
+                <!-- Links do rodapé para navegação rápida -->
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+
+        <div class="social">
+            <!-- Ícones sociais para as redes sociais -->
+            <a href="">
+                <i class="fab fa-facebook-square"></i> <!-- Ícone do Facebook -->
+            </a>
+            <a href="">
+                <i class="fab fa-instagram"></i> <!-- Ícone do Instagram -->
+            </a>
+            <a href="">
+                <i class="fab fa-twitter-square"></i> <!-- Ícone do Twitter -->
+            </a>
+            <a href="">
+                <i class="fab fa-pinterest"></i> <!-- Ícone do Pinterest -->
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

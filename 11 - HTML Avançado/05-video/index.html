@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+        video {
+            width: 100%; /* Deixa o player responsivo, ocupando 100% da largura disponível */
+            max-width: 600px; /* Define um tamanho máximo de 600px para o player */
+            border-radius: 10px; /* Arredonda as bordas do player, criando um visual mais suave */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao redor do player para um efeito 3D */
+            transition: all 0.3s ease-in-out; /* Aplica uma transição suave para qualquer mudança (ex: efeitos de hover) */
+        }
+    
+        video:hover {
+            box-shadow: 0px 6px 15px rgba(255, 215, 0, 0.6); /* Aumenta a sombra e muda a cor quando passa o mouse (efeito de brilho dourado) */
+            transform: scale(1.05); /* Aumenta ligeiramente o tamanho do player quando o mouse passa por cima */
+        }
+    </style>
+        
+</head>
+<body>
+    <h1>Video</h1>
+
+    <!-- <video src="videos/video.mp4" width="300" controls loop poster="images/thumb.jpg"></video> -->
+
+    <video controls width="300">
+        <source src="videos/video.mp4" type="video/mp4">
+        <source src="videos/video.ogv" type="video/ogg">
+        <source src="videos/video.webm" type="video/webm">
+        <p>Esse navegador não tem suporte a tag video <a href="https://www.google.com/intl/pt-BR/chrome/">Baixe aqui o Chrome</a></p>
+    </video>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lIqgKgfgETU?si=IMfSUTFtysIDWCjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

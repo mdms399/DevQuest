@@ -1,0 +1,279 @@
+/* CONFIGURAÇÕES INICIAIS */
+html {
+    font-size: 62.5%; /* Define a base de 1rem como 10px (facilita os cálculos de rems) */
+}
+
+body {
+    display: grid; /* Utiliza o layout Grid para organizar a estrutura da página */
+    grid-template-areas: 
+        "header header header header"  /* A primeira linha será toda do cabeçalho */
+        "hero hero hero hero"          /* A segunda linha será a seção 'hero' que ocupa toda a linha */
+        "about about about about"      /* A terceira linha será a seção 'about' ocupando toda a linha */
+        "services services services services" /* A quarta linha será a seção 'services' */
+        "projects projects projects projects" /* A quinta linha será a seção 'projects' */
+        "footer footer footer footer"; /* A sexta linha será o rodapé, ocupando toda a linha */
+    grid-template-columns: repeat(4, 1fr); /* Define 4 colunas, cada uma ocupando 1 fração do espaço disponível */
+    font-size: 1.6rem; /* Define o tamanho da fonte para 1.6rem, o que equivale a 16px */
+    font-family: "Roboto", sans-serif; /* Define a fonte utilizada para o corpo da página */
+    font-weight: 400; /* Peso normal (não negrito) para o texto do corpo */
+}
+
+/* HEADER */
+.header {
+    grid-area: header; /* Define a área da grid para o cabeçalho */
+    background-color: #fff; /* Define a cor de fundo do cabeçalho como branca */
+}
+
+.header .header-container {
+    display: flex; /* Utiliza Flexbox para organizar os itens dentro do cabeçalho */
+    padding: 20px 40px; /* Define o espaçamento interno do cabeçalho */
+    justify-content: space-between; /* Espaça os itens igualmente, alinhando-os nas extremidades */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    min-height: 75px; /* Define uma altura mínima para o cabeçalho */
+}
+
+.header h1 {
+    font-size: 3rem; /* Tamanho da fonte para o logo */
+    font-weight: 700; /* Peso da fonte (negrito) */
+    transition: 0.3s; /* Transição suave para alterações (exemplo: quando o usuário passa o mouse) */
+}
+
+.header a:hover h1 {
+    color: coral; /* Altera a cor do logo para coral ao passar o mouse */
+}
+
+/* HERO (Seção principal) */
+.hero {
+    grid-area: hero; /* Define a área da grid para a seção 'hero' */
+    height: 89vh; /* Define a altura da seção como 89% da altura da viewport */
+    background: url('../images/lemons.jpg') center center no-repeat; /* Define uma imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra todo o espaço disponível */
+    display: flex; /* Utiliza Flexbox para organizar o conteúdo */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    position: relative; /* Necessário para posicionar o ícone 'seta' em relação a esta seção */
+}
+
+.hero h2 {
+    font-weight: 500; /* Peso médio para o texto */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    font-size: 4rem; /* Tamanho da fonte */
+}
+
+.hero:after {
+    content: url('../images/seta_preta.png'); /* Adiciona uma seta como conteúdo da pseudo-classe :after */
+    position: absolute; /* Posiciona a seta absolutamente em relação ao seu elemento pai */
+    height: 35px; /* Define a altura da seta */
+    bottom: 40px; /* Define a distância da seta em relação à parte inferior da seção hero */
+    animation: downarrow 0.6s infinite alternate ease-in-out; /* Animação suave para a seta */
+}
+
+@keyframes downarrow {
+    0% { 
+        transform: translateY(0); /* A seta começa sem deslocamento vertical */
+        opacity: 0.4; /* A seta começa com opacidade reduzida */
+    }
+    100% { 
+        transform: translateY(0.4rem); /* A seta se desloca para baixo */
+        opacity: 0.9; /* A seta aumenta a opacidade */
+    }
+}
+
+@media(max-width: 425px) { /* Para dispositivos com largura de tela até 425px */
+    .hero {
+        height: 60vh; /* Reduz a altura da seção hero */
+    }
+
+    .hero h2 {
+        font-size: 2.5rem; /* Diminui o tamanho da fonte do título */
+    }
+}
+
+/* ABOUT (Seção Sobre) */
+.about {
+    grid-area: about; /* Define a área da grid para a seção 'about' */
+    display: grid; /* Utiliza grid para organizar a seção */
+    grid-template-columns: 1fr 1fr; /* Define 2 colunas para os itens */
+    background-color: #fff; /* Cor de fundo branca */
+    max-width: var(--max-width-size); /* Largura máxima definida em uma variável */
+    margin: 0 auto; /* Centraliza a seção */
+}
+
+.about .item {
+    padding: 20%; /* Define um padding grande em torno do conteúdo */
+    display: flex; /* Flexbox para organizar o conteúdo */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    justify-content: center; /* Alinha o conteúdo verticalmente no centro */
+    align-content: center; /* Alinha o conteúdo horizontalmente */
+}
+
+.about .item h3 {
+    font-weight: 700; /* Define o título com peso de fonte negrito */
+    font-size: 4rem; /* Tamanho da fonte */
+}
+
+.about .item a {
+    font-weight: 400; /* Peso da fonte normal */
+    font-size: 1.8rem; /* Tamanho da fonte para o link */
+    margin: 30px 0; /* Define uma margem entre o título e o link */
+}
+
+.about .image {
+    height: 100%; /* Faz a imagem preencher toda a altura */
+    width: 100%; /* Faz a imagem preencher toda a largura */
+}
+
+.about .item .btn-know-more {
+    font-size: 1.6rem; /* Tamanho do botão */
+    align-self: flex-start; /* Alinha o botão à esquerda */
+}
+
+.about .item .btn-know-more:hover {
+    font-weight: 700; /* Aumenta o peso da fonte quando o mouse passa sobre o botão */
+}
+
+.about .image.right {
+    background: url('../images/bridge.jpg') center center no-repeat; /* Imagem de fundo à direita */
+    background-size: cover; /* A imagem cobre todo o espaço */
+}
+
+.about .image.left {
+    background: url('../images/sky.jpg') center center no-repeat; /* Imagem de fundo à esquerda */
+    background-size: cover; /* A imagem cobre todo o espaço */
+}
+
+@media (max-width: 425px) { /* Para dispositivos com largura de tela até 425px */
+    .about .item {
+        text-align: center; /* Alinha o conteúdo ao centro */
+    }
+
+    .about {
+        grid-template-columns: 1fr; /* Exibe as colunas como uma única coluna em telas pequenas */
+    }
+}
+
+/* SERVICES (Seção de Serviços) */
+.services {
+    grid-area: services; /* Define a área da grid para a seção de serviços */
+    display: grid; /* Utiliza o grid layout */
+    grid-template-columns: 1fr 1fr; /* Duas colunas para os serviços */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.services .service {
+    padding: 70px 20px; /* Espaçamento interno do bloco de cada serviço */
+}
+
+.services .service img {
+    width: 250px; /* Largura da imagem */
+    margin-bottom: 30px; /* Espaçamento abaixo da imagem */
+}
+
+.services .service h3 {
+    font-size: 1.8rem; /* Tamanho da fonte do título */
+    font-weight: 700; /* Peso da fonte negrito */
+}
+
+.services .service p {
+    font-size: 2rem; /* Tamanho da fonte do parágrafo */
+    font-weight: 400; /* Peso normal */
+    max-width: 400px; /* Largura máxima do texto */
+    margin: 20px auto 0; /* Margem acima do parágrafo */
+    line-height: 25px; /* Espaçamento entre as linhas */
+}
+
+.services .service:nth-child(1) {
+    background-color: lightskyblue; /* Cor de fundo para o primeiro serviço */
+}
+
+.services .service:nth-child(2) {
+    background-color: lightpink; /* Cor de fundo para o segundo serviço */
+}
+
+@media (max-width: 450px) { /* Para dispositivos com largura de tela até 450px */
+    .services {
+        grid-template-columns: 1fr; /* Exibe os serviços em uma única coluna */
+    }
+}
+
+/* PROJECTS (Seção de Projetos) */
+.projects {
+    grid-area: projects; /* Define a área da grid para a seção de projetos */
+    display: grid; /* Utiliza grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Exibe 4 colunas */
+}
+
+.projects img {
+    height: 100%; /* As imagens ocupam 100% da altura disponível */
+    transition: 0.3s; /* Transição suave ao passar o mouse sobre a imagem */
+}
+
+.projects a:hover img {
+    opacity: 0.8; /* Reduz a opacidade da imagem ao passar o mouse sobre ela */
+}
+
+@media (max-width: 768px) { /* Para dispositivos com largura de tela até 768px */
+    .projects {
+        grid-template-columns: 1fr 1fr; /* Exibe 2 colunas */
+        grid-template-rows: 1fr 1fr; /* Exibe 2 linhas */
+    }
+}
+
+@media (max-width: 425px) { /* Para dispositivos com largura de tela até 425px */
+    .projects {
+        grid-template-columns: 1fr; /* Exibe 1 coluna */
+        grid-template-rows: repeat(4, 1fr); /* Exibe 4 linhas */
+    }
+}
+
+/* FOOTER (Rodapé) */
+.footer {
+    grid-area: footer; /* Define a área da grid para o rodapé */
+    display: flex; /* Utiliza Flexbox para organizar os itens */
+    background-color: lightgreen; /* Cor de fundo do rodapé */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 100px 0; /* Espaçamento interno */
+}
+
+.footer h4 {
+    font-weight: 700; /* Fonte em negrito */
+    font-size: 2.5rem; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.footer nav {
+    margin: 50px 0; /* Margem superior e inferior para o menu */
+}
+
+.footer nav ul {
+    display: flex; /* Exibe os itens de navegação como flexbox */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    max-width: 320px; /* Largura máxima do menu */
+    margin: 0 auto; /* Centraliza o menu horizontalmente */
+}
+
+.footer nav ul li a {
+    font-weight: 500; /* Peso normal para os links */
+    font-size: 2rem; /* Tamanho da fonte dos links */
+    margin: 20px; /* Margem ao redor de cada link */
+    transition: 0.3s; /* Transição suave ao passar o mouse sobre os links */
+}
+
+.footer nav ul li a:hover {
+    font-weight: 700; /* Deixa o link em negrito ao passar o mouse */
+    color: #fff; /* Muda a cor do texto para branco */
+}
+
+.footer .social i {
+    font-size: 2rem; /* Tamanho do ícone de rede social */
+    transition: 0.3s; /* Transição suave para a alteração de estilo */
+}
+
+.footer .social a {
+    margin: 20px; /* Espaçamento entre os ícones de rede social */
+}
+
+.footer .social a:hover {
+    color: #fff; /* Muda a cor do ícone para branco ao passar o mouse */
+}

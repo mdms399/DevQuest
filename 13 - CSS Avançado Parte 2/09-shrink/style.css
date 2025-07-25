@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+.shrink-1 {
+    flex-shrink: 1; /* Diminui proporcionalmente */
+}
+
+.shrink-2 {
+    flex-shrink: 2; /* Diminui o dobro do item com shrink 1 */
+}
+
+.shrink-3 {
+    flex-shrink: 3; /* Diminui três vezes mais do que o padrão */
+}

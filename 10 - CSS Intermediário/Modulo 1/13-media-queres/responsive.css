@@ -1,0 +1,19 @@
+@media (max-width: 576px) {
+    .cabecalho nav {
+        float: none;
+    }
+
+    .cabecalho nav li {
+        display: block;
+    }
+    .cabecalho {
+        text-align: center;
+    }
+}
+
+img {
+    float: left;
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+    width: 150px;
+}
+

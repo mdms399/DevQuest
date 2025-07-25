@@ -1,0 +1,69 @@
+body {
+    text-align: center;
+    font-size: 22px;
+    border: solid white 20px;
+    border-radius: 10px;
+    display: absolute;
+    background-color: beige ;
+    margin: 150px;
+    top: 0;
+}
+
+p {
+    font-size: 12px;
+}
+
+input {
+    font-size: 17px;
+    padding: 8px 15px;
+}
+
+select {
+    font-size: 17px;
+}
+
+.genero-feminino {
+    padding: 5px;
+    margin: 5px;
+    border: solid black 1px;
+    display: inline-block;
+}
+
+.genero-masculino {
+    padding: 5px;
+    margin: 5px;
+    border: solid black 1px;
+    display: inline-block;
+}
+
+.genero-personalizado {
+    padding: 5px;
+    margin: 5px;
+    border: solid black 1px;
+    display: inline-block;
+}
+
+.genero-titulo {
+    text-align: left;
+}
+
+.Celular-Email {
+    padding: 8px;
+    width: 90%;
+    text-align: left;
+    direction: ltr;
+}
+
+.Nova-Senha {
+    padding: 8px;
+    width: 90%;
+    text-align: left;
+    direction: ltr;
+}
+
+.Cadastre-se {
+    background-color: #00a400;
+    color: white;
+    font-weight: bold;
+}
+

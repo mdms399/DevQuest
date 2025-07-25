@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "destaque propaganda"
+      "destaque lista"
+      "destaque lista"
+      "destaque lista";
+    gap: 20px;
+  }
+  
+  /* Bloco do vídeo destaque */
+  .video-destaque {
+    grid-area: destaque;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .video-destaque .thumb {
+    width: 100%;
+    height: 200px;
+    background: #ccc;
+    margin-bottom: 15px;
+    border-radius: 6px;
+  }
+  
+  .video-destaque h2 {
+    margin-bottom: 5px;
+  }
+  
+  .video-destaque .info {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .video-destaque .descricao {
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  /* Propaganda */
+  .propaganda {
+    grid-area: propaganda;
+    background: #ccc;
+    height: 80px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Lista lateral de vídeos */
+  .video-lista {
+    grid-area: lista;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 120px auto;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .video-lista .thumb {
+    width: 100%;
+    height: 70px;
+    background: #ccc;
+    border-radius: 6px;
+  }
+  
+  .video-lista h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .video-lista .autor {
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  .video-lista .info {
+    font-size: 0.8rem;
+    color: #999;
+  }
+  

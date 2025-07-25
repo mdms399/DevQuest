@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../00-image/favicon.ico" type="image/x-icon">
+    <title>Imagens responsivas usando a tag picture</title>
+</head>
+<body>
+    <h1>Picture com mobile first</h1>
+    <picture>
+        <source media="(min-width: 1024px)" srcset="https://placehold.co/1200"/>
+        <source media="(min-width: 768px)" srcset="https://placehold.co/850"/>
+        <source media="(min-width: 465px)" srcset="https://placehold.co/00"/>
+        <img src="https://placehold.co/300x300" alt="Imagem de um gatinho">
+    </picture>
+</body>
+</html>
+
+
+<picture>
+    <!-- Imagem para telas grandes (acima de 1024px) -->
+    <source srcset="https://placehold.co/1200" media="(min-width: 1024px)">
+    
+    <!-- Imagem para telas médias (entre 600px e 1023px) -->
+    <source srcset="https://placehold.co/850" media="(min-width: 768px)">
+    
+    <!-- Imagem para telas pequenas (abaixo de 600px) -->
+    <source srcset="https://placehold.co/500"" media="(max-width: 465px)">
+    
+    <!-- Imagem padrão (fallback) -->
+    <img src="https://placehold.co/300x300" alt="Imagem de um gatinho">
+</picture>
