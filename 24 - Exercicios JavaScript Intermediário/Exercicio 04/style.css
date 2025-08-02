@@ -1,0 +1,8 @@
+input {
+  border: 2px solid gray;
+  padding: 5px;
+}
+
+input.preenchido {
+  border: 2px solid green;
+}
