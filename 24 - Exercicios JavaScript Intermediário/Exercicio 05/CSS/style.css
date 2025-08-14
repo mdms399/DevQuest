@@ -1,15 +1,18 @@
 body {
-    background: url(../image/01.jpg) ;
+    height: 100vh;
     font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 180px;
 }
 
 .corpo {
     width: 620px;
     height: 700px;
     background-color: white;
-    padding: 65px 60px;
-    margin: 180px 0px 0px 186px;
     border-radius: 10px;
+    padding: 65px 60px;
 }
 
 .corpo .titulo {
@@ -34,5 +37,31 @@ body {
     line-height: 100%;
     letter-spacing: 0%;
     color: #C50000;
-;
+}
+
+.setas {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 70px;
+}
+
+.setas button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.setas .esquerda img,
+.setas .direita img {
+    width: 49px;
+    height: 78px;
+}
+.setas .esquerda img {
+    transform: rotate(-180deg);
+    opacity: 0.5;
 }
