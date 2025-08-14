@@ -1,9 +1,11 @@
-let input = document.getElementById('meu-input');
+const inputs = document.querySelectorAll(".meu-input");
 
-input.addEventListener('input', function () {
+inputs.forEach(input => {
+  input.addEventListener('input', () => {
     if (input.value !== "") {
-        input.classList.add('preenchido');
+      input.classList.add("preenchido");
     } else {
-        input.classList.remove('preenchido');
+      input.classList.remove("preenchido");
     }
+  });
 });

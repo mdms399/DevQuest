@@ -1,0 +1,38 @@
+body {
+    background: url(../image/01.jpg) ;
+    font-family: "Roboto", sans-serif;
+}
+
+.corpo {
+    width: 620px;
+    height: 700px;
+    background-color: white;
+    padding: 65px 60px;
+    margin: 180px 0px 0px 186px;
+    border-radius: 10px;
+}
+
+.corpo .titulo {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding-bottom: 80px;
+}
+
+.corpo .paragrafo {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 0%;
+    padding-bottom: 50px;
+}
+
+.corpo a {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #C50000;
+;
+}
